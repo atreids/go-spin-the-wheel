@@ -18,7 +18,7 @@ N.B to use `hostname.local` (where `hostname` is the hostname of the Pi) you mus
 
 ### Running on Pi 
 
-Once moved, you can run the program on Pi just as you would on your normal computer. However, you may want to consider using `nohup` to prevent the bot from stopping once you disconnect your session and sending the stdout to a logfile.
+Once moved, you can run the program on Pi just as you would on your normal computer. However, you may want to consider using `nohup` to prevent the bot from stopping once you disconnect your session and sending the stdout to a logfile. Or, even better, follow the example in the `README.md` and systemd example file in this directory to setup systemd to manage the bot. Enabling autostart on Pi boot and autorestart on crash.
 
-`nohup ./spin_bot_arm64 > logfile &`
+`nohup ./spin_bot_arm > logfile &`
 
