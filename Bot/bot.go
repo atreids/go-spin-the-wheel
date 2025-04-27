@@ -1,7 +1,6 @@
 package bot
 
 import (
-	"fmt"
 	"log"
 	"math/rand"
 	"os"
@@ -34,7 +33,7 @@ func Run() {
 	defer discord.Close() // close session, after function termination
 
 	// keep bot running untill there is NO os interruption (ctrl + C)
-	fmt.Println("Bot running....")
+	log.Print("Bot running....")
 	c := make(chan os.Signal, 1)
 	signal.Notify(c, os.Interrupt)
 	<-c
