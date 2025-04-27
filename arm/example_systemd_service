@@ -1,0 +1,19 @@
+# Example systemd service for starting bot automatically on startup
+[Unit]
+Description=Spin the Wheel Discord Bot
+After=network-online.target
+Wants=network-online.target
+Requires=network-online.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/bin/spin_bot
+ExecStart=/home/pi/bin/spin_bot/spin_bot_arm
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=inherit
+
+[Install]
+WantedBy=multi-user.target
