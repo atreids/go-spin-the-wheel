@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	bot "example.com/hello_world_bot/Bot"
+	bot "atreids.com/go-spin-the-wheel/bot"
 	"github.com/joho/godotenv"
 )
 

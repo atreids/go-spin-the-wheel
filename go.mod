@@ -1,4 +1,4 @@
-module example.com/hello_world_bot
+module atreids.com/go-spin-the-wheel
 
 go 1.24.2
 
