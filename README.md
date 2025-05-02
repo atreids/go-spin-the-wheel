@@ -1,6 +1,11 @@
 # go-spin-the-wheel
 
-A Go Discord bot which will give you a random Marvel Rival's hero to play.
+A Go Discord bot which will give you a random Marvel Rival's hero to play or randomise the players in your voice channel into 2 separate teams.
+
+## Commands
+
+- `!spin`
+- `!random_teams`
 
 ## Local dev
 
