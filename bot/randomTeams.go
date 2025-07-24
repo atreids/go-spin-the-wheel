@@ -66,12 +66,30 @@ func randomTeamsHandler(discord *discordgo.Session, message *discordgo.MessageCr
 	for _, vs := range guild.VoiceStates {
 		if vs.ChannelID == requestingUserVoiceState.ChannelID {
 			// Get specific member details
+			var user *discordgo.User
 			member, err := discord.State.Member(guildID, vs.UserID)
 			if err != nil {
-				errorLog(err)
-				continue
+				log.Print("Could not retrieve user from cache")
+				remoteMember, err := discord.User(vs.UserID)
+				if err != nil {
+					errorLog(err)
+				} else {
+					log.Print("Got user from Discord API instead")
+					user = remoteMember
+				}
+			} else {
+				user = member.User
 			}
-			players = append(players, member.User.GlobalName)
+
+			var name string
+			if user.GlobalName == "" {
+				name = user.Username
+			} else {
+				name = user.GlobalName
+			}
+
+			log.Printf("Found player: %s", name)
+			players = append(players, name)
 		}
 	}
 
