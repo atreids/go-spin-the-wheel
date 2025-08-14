@@ -1,0 +1,11 @@
+services:
+  wheel-bot:
+    build: .
+    restart: unless-stopped
+    env_file:
+      - .env
+    networks:
+      - wheel-bot-network
+
+networks:
+  wheel-bot-network:
