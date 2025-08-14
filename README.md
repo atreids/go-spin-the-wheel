@@ -15,13 +15,13 @@ Token can be regenerated from [Discord Developer Applications](https://discord.c
 
 Build into exec:
 
-> `go build main.go`
+> `go build app.go`
 
-> `./main`
+> `./app`
 
 Run without building:
 
-> `go run main.go`
+> `go run app.go`
 
 ## Running the bot on a Pi 
 

@@ -26,7 +26,9 @@ func checkNetwork() bool {
 func main() {
 	err := godotenv.Load()
 	if err != nil {
-		log.Fatal("Error loading .env file")
+		if os.Getenv("BOT_TOKEN") == "" {
+			log.Fatal("Error loading .env file")
+		}
 	}
 
 	if !checkNetwork() {
