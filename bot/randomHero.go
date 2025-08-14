@@ -28,7 +28,7 @@ func randomHeroHandler(discord *discordgo.Session, message *discordgo.MessageCre
 		"Black Panther", "Black Widow", "Hawkeye", "Hela", "Human Torch", "Iron Fist", "Iron Man", "Magik", "Mr Fantastic", "Moon Knight", "Namor",
 		"Psylocke", "Scarlet Witch", "Spider-Man", "Squirrel Girl", "Star-Lord", "Storm", "The Punisher",
 		"Winter Soldier", "Wolverine", "Adam Warlock", "Cloak and Dagger", "Invisible Woman", "Jeff the Land Shark", "Loki",
-		"Luna Snow", "Mantis", "Rocket Raccoon",
+		"Luna Snow", "Mantis", "Rocket Raccoon", "Pheonix", "Blade",
 	}
 
 	switch {
