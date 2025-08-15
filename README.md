@@ -1,5 +1,7 @@
 # go-spin-the-wheel
 
+[Docker hub](https://hub.docker.com/r/axto/marvel-rivals-discord-bot)
+
 A Go Discord bot which will give you a random Marvel Rival's hero to play or randomise the players in your voice channel into 2 separate teams.
 
 ## Commands
@@ -12,6 +14,12 @@ A Go Discord bot which will give you a random Marvel Rival's hero to play or ran
 You need a `.env` file with `BOT_TOKEN=<bot-token>` in it.
 
 Token can be regenerated from [Discord Developer Applications](https://discord.com/developers/applications) dashboard.
+
+## Docker (Recommended)
+
+Simply run `docker compose up -d`
+
+## Manual
 
 Build into exec:
 
